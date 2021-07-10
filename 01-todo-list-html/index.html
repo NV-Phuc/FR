@@ -74,25 +74,25 @@
 				<form action="" method="POST" class="form-inline justify-content-between ">
 					<div class="form-group">
 						<label class="sr-only" for="">label</label>
-						<input type="text" class="form-control" placeholder="Task Name" />
+						<input type="text" class="form-control js-form-control" placeholder="Task Name" />
 					</div>
 					<div class="form-group">
 						<label class="sr-only" for="">label</label>
-						<select name="ds" class="form-control" required="required">
+						<select name="ds" class="form-control js-level-work" required="required">
 							<option value="0">Small</option>
 							<option value="1">Medium</option>
 							<option value="2">High</option>
 						</select>
 					</div>
-
-					<button type="button" class="btn btn-primary">Submit</button>
-					<button type="button" class="btn btn-secondary">Cancel</button>
-				</form>
-			</div>
-			<!-- FORM : END -->
-		</div>
+		<!-- FORM : END -->
+		
 
 		<!-- LIST : START -->
+					<button type="button" class="btn btn-primary js-btn-primary">Submit</button>
+					<button type="button" class="btn btn-secondary js-btn-secondary">Cancel</button>
+				</form>
+			</div>
+	
 
 		<div class="panel panel-success">
 			<div class="panel-heading">List Task</div>
@@ -107,16 +107,16 @@
 				</thead>
 
 				<tbody>
-					<tr>
-						<td class="text-center">1</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
-						<td class="text-center"><span class="badge badge-danger">High</span></td>
-						<td>
-							<button type="button" class="btn btn-warning">Edit</button>
-							<button type="button" class="btn btn-danger">Delete</button>
+					<tr class="js-list-work">
+						<td class="text-center js-text-center">1</td>
+						<td class="nameitem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
+						<td class="text-center js-level"><span class="badge badge-danger js-level-danger">Hight</span></td>
+						<td class="js-action">
+							<button type="button" class="btn btn-warning js-btn-warning">Edit</button>
+							<button type="button" class="btn btn-danger js-btn-danger">Delete</button>
 						</td>
 					</tr>
-					<tr>
+					<!-- <tr>
 						<td class="text-center">2</td>
 						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea c</td>
 						<td class="text-center"><span class="badge badge-secondary">Small</span></td>
@@ -133,13 +133,13 @@
 							<button type="button" class="btn btn-warning">Edit</button>
 							<button type="button" class="btn btn-danger">Delete</button>
 						</td>
-					</tr>
+					</tr> -->
 				</tbody>
 
 			</table>
 		</div>
 	</div>
-
+</div>
 
 	<!--
 		This HTML file is a template.

@@ -14,7 +14,7 @@ body {
 .form-inline{
     display: none;
 }
-.open.form-inline{
+.open > .form-inline{
     display: flex;
 }
 
